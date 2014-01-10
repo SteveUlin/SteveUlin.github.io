@@ -1,6 +1,6 @@
 description: "A personal website"
 
-url: "StevenUlin.github.io"
+url: "steveulin.github.io"
 
 paginate: 10
 
@@ -15,5 +15,4 @@ author :
   title : Mathematician
   email : ulins@rpi.edu
   
-  
-ASSET_PATH : /assets
+BASE_PATH : false
