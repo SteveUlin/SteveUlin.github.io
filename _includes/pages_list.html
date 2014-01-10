@@ -1,0 +1,18 @@
+<!--Helper code to list specific pages
+ Variables
+      -pages_list     elements to loop through
+      -group          filter elements by the "group" defined in the front matter -->
+<!-- This code is from the jekyll bootstrap -->
+
+
+{% for node in pages_list %}
+  {% if group == null or group == node.group %}
+    {% if page.url == node.url %}
+      <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+    {% else %}
+      <li><a href="{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}

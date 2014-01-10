@@ -1,0 +1,52 @@
+
+/*From http://stackoverflow.com/questions/806000/css-semi-transparent-background-but-not-text */
+.alpha20 {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0) transparent;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.2);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)";
+}
+
+/*From http://charliepark.org/bootstrap_buttons/ */
+.btn-custom {
+  background-color: hsl(0, 0%, 12%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#474747", endColorstr="#1e1e1e");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#474747), to(#1e1e1e));
+  background-image: -moz-linear-gradient(top, #474747, #1e1e1e);
+  background-image: -ms-linear-gradient(top, #474747, #1e1e1e);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #474747), color-stop(100%, #1e1e1e));
+  background-image: -webkit-linear-gradient(top, #474747, #1e1e1e);
+  background-image: -o-linear-gradient(top, #474747, #1e1e1e);
+  background-image: linear-gradient(#474747, #1e1e1e);
+  border-color: #1e1e1e #1e1e1e hsl(0, 0%, 8%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.26);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*From http://od-eon.com/blogs/calvin/flush-footer-css-bottom-page/ */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -2em;
+}
+
+.footer{
+    height: 2em;
+    background: #222;
+    border-top: 1px solid #2a2a2a;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 5px 0;
+}
